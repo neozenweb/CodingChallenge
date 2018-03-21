@@ -17,6 +17,21 @@
 75% {background-color:#00FF00;top:0px;left:200px;}
 100% {background-color:#66FF00;top:0px;left:500px;}
 }
+@keyframes imganim
+{
+0% {top:0px;left:0px;}
+25% {top:0px;left:50px;}
+50% {top:0px;left:100px;}
+100% {top:0px;left:200px;}
+}
+
+@-webkit-keyframes imganim
+{
+0% {top:0px;left:0px;}
+25% {top:0px;left:50px;}
+50% {top:0px;left:100px;}
+100% {top:0px;left:200px;}
+}
 @keyframes secanim
 {
 0% {background-color:#CC3300;top:0px;left:0px;}
@@ -109,29 +124,74 @@
    left:200px;
    
 }
+.maincard
+{
+   padding-top:30px;
+   padding-bottom:30px;
+   padding-left:30px;
+   padding-right:30px;
+   border:10px double black
+   
+}
+
 
 .mainfont
 {
 font-family: 'Tangerine';
 font-size:30px;
-padding-top:10px;
-padding-bottom:10px;
-padding-left:10px;
-padding-right:10px;
-font-weight: bold;
+font-weight:bold;
 
+
+}
+
+.smfont
+{
+font-family: 'Pacifico';
+font-size:20px;
+font-weight:bold;
+padding-left:50px;
+}
+.topmenu
+{
+    top:0px;
+   position:fixed;
+   
+   }
+   .footerline
+{
+   bottom:0px;
+   position:fixed;
+   padding:50px;
+   
+   }
+.menuitem
+{
+  
+   padding-top:50px;
+   padding-bottom:30px;
+   padding-left:50px;
+   padding-right:50px;
 }
 .secfont
 {
-font-family: 'Pacifico';
-color:#FFFF33;
-font-size:25px;
-padding-top:10px;
-padding-bottom:10px;
-padding-left:10px;
-padding-right:10px;
+font-family: 'Indie Flower';
+color:#CCFFAA;
+font-size:20px;
 font-weight: bold;
 
+}
+.mainimg
+{
+ border:10px double black;
+ 
+ }
+ 
+ 
+ 
+ 
+.pagecont
+{
+padding:100px;
 }
 
 
@@ -186,4 +246,19 @@ font-weight: bold;
 	border-top: 25px solid transparent;
 	border-left: 50px solid #CC33DD;
 	border-bottom: 25px solid transparent;
+}
+.imganim
+{
+   
+   position:relative;
+   -webkit-animation-name:imganim;
+   -webkit-animation-duration:4s;
+   -webkit-animation-iteration-count:infinte;
+   -webkit-animation-direction:alternate-reverse;
+   animation-name:imganim;
+   animation-duration:4s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate-reverse;
+   
+   
 }
