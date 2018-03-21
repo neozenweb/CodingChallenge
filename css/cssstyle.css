@@ -1,0 +1,189 @@
+
+
+@keyframes mainanim
+{
+0% {background-color:#00CCCC;top:0px;left:0px;}
+25% {background-color:#CC3300;top:0px;left:50px;}
+50% {background-color:#6666CC;top:0px;left:100px;}
+75% {background-color:#00FF00;top:0px;left:200px;}
+100% {background-color:#66FF00;top:0px;left:500px;}
+}
+
+@-webkit-keyframes mainanim
+{
+0% {background-color:#00CCCC;top:0px;left:0px;}
+25% {background-color:#CC3300;top:0px;left:50px;}
+50% {background-color:#6666CC;top:0px;left:100px;}
+75% {background-color:#00FF00;top:0px;left:200px;}
+100% {background-color:#66FF00;top:0px;left:500px;}
+}
+@keyframes secanim
+{
+0% {background-color:#CC3300;top:0px;left:0px;}
+25% {background-color:#CC3300;top:50px;left:50px;}
+50% {background-color:#CC3300;top:100px;left:100px;}
+75% {background-color:#CC3300;top:200px;left:200px;}
+100% {background-color:#CC3300;top:500px;left:500px;}
+}
+
+@-webkit-keyframes secanim
+{
+0% {background-color:#CC3300;top:0px;left:0px;}
+25% {background-color:#CC3300;top:50px;left:50px;}
+50% {background-color:#CC3300;top:100px;left:100px;}
+75% {background-color:#CC3300;top:200px;left:200px;}
+100% {background-color:#CC3300;top:500px;left:500px;}
+}
+@keyframes thrdanim
+{
+0% {background-color:#CC3300;top:200px;left:200px;}
+25% {background-color:#CC3300;top:100px;left:100px;}
+50% {background-color:#CC3300;top:75px;left:75px;}
+75% {background-color:#CC3300;top:50px;left:50px;}
+100% {background-color:#CC3300;top:0px;left:0px;}
+}
+
+@-webkit-keyframes thrdanim
+{
+0% {background-color:#CC3300;top:200px;left:200px;}
+25% {background-color:#CC3300;top:100px;left:100px;}
+50% {background-color:#CC3300;top:75px;left:75px;}
+75% {background-color:#CC3300;top:50px;left:50px;}
+100% {background-color:#CC3300;top:0px;left:0px;}
+}
+
+.mainanim
+{
+   width:200px;
+   height:50px;
+   position:relative;
+   -webkit-animation-name:mainanim;
+   -webkit-animation-duration:4s;
+   -webkit-animation-iteration-count:infinte;
+   -webkit-animation-direction:alternate-reverse;
+   animation-name:mainanim;
+   animation-duration:4s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate-reverse;
+   
+   
+}
+.secanim
+{
+   width:500px;
+   height:200px;
+   position:relative;
+   -webkit-animation-name:secanim;
+   -webkit-animation-duration:2s;
+   -webkit-animation-iteration-count:infinite;
+   -webkit-animation-direction:alternate-reverse;
+   animation-name:secanim;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate-reverse;
+   
+   
+}
+.thrdanim
+{
+   width:500px;
+   height:200px;
+   position:relative;
+   -webkit-animation-name:thrdanim;
+   -webkit-animation-duration:2s;
+   -webkit-animation-iteration-count:infinite;
+   -webkit-animation-direction:alternate-reverse;
+   animation-name:thrdanim;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate-reverse;
+   
+   
+}
+.maincont
+{
+   width:500px;
+   height:300px;
+   position:relative;
+   top:200px;
+   left:200px;
+   
+}
+
+.mainfont
+{
+font-family: 'Tangerine';
+font-size:30px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+font-weight: bold;
+
+}
+.secfont
+{
+font-family: 'Pacifico';
+color:#FFFF33;
+font-size:25px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+font-weight: bold;
+
+}
+
+
+.underdiv
+{
+ 
+   width: 10px;
+  height:10px;
+  padding:100px;
+    background-color:blue;
+  
+}
+.square1 {
+  height: 50px;
+  width: 50px;
+    background-color: #ffffff;
+	
+}
+.square2 {
+  height: 50px;
+  width: 50px;
+    background-color: #000000;
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #CC33DD;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #CC33DD;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #CC33DD;
+	border-bottom: 25px solid transparent;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid #CC33DD;
+	border-bottom: 25px solid transparent;
+}
