@@ -17,6 +17,17 @@
 75% {background-color:#00FF00;top:0px;left:200px;}
 100% {background-color:#66FF00;top:0px;left:500px;}
 }
+@keyframes homeanim
+{
+0% {top:0px;left:0px;}
+100% {top:0px;left:200px;}
+}
+
+@-webkit-keyframes homeanim
+{
+0% {top:0px;left:0px;}
+100% {top:0px;left:200px;}
+}
 @keyframes imganim
 {
 0% {top:0px;left:0px;}
@@ -83,6 +94,22 @@
    
    
 }
+.homeanim
+{
+   width:400px;
+   height:50px;
+   position:relative;
+   -webkit-animation-name:homeanim;
+   -webkit-animation-duration:5s;
+   -webkit-animation-iteration-count:infinte;
+   -webkit-animation-direction:reverse;
+   animation-name:homeanim;
+   animation-duration:5s;
+   animation-iteration-count:infinite;
+   animation-direction:reverse;
+   
+   
+}
 .secanim
 {
    width:500px;
@@ -122,6 +149,23 @@
    position:relative;
    top:200px;
    left:200px;
+   
+}
+.texttop
+{
+   position:absolute;
+   top:400px;
+   left:200px;
+   
+}
+.invtext
+{
+   position:absolute;
+   top:50px;
+   left:100px;
+   font-family: 'Pacifico';
+font-size:20px;
+font-weight:bold;
    
 }
 .maincard
@@ -178,6 +222,23 @@ font-family: 'Indie Flower';
 color:#CCFFAA;
 font-size:20px;
 font-weight: bold;
+
+}
+.movfont
+{
+font-family: 'Indie Flower';
+color:red;
+font-size:40px;
+font-weight: bold;
+
+}
+.homefont
+{
+font-family: 'Tangerine';
+color:red;
+font-size:60px;
+font-weight: bold;
+padding-left:200px;
 
 }
 .thfont
@@ -276,4 +337,14 @@ padding:100px;
    animation-direction:alternate-reverse;
    
    
+}
+.homeimg
+{
+width:100%;
+height:100%;
+padding:10px;
+
+}
+.txtmain
+{
 }
