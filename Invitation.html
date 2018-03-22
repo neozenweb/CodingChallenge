@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Housewarming Invitation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-indigo.css">
+<link rel="stylesheet" href="css/cssstyle.css" type="text/css">
+<link rel="stylesheet" href="css/cssfonts.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap-social.css">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+<script language="JavaScript" src="javascript/invitationjs.js"></script>
+<script language="JavaScript" src="javascript/w3data.js"></script>
+<script language="JavaScript" src="javascript/jquery-3.1.1.min.js"></script>
+
+
+
+</head>
+<body class="w3-theme" >
+
+
+<div  class="w3-container w3-mobile">
+
+  <img class="homeimg  " id="imgmain" src="images/Home1.jpeg"/>
+  <img class="homeimg  " id="imgmain" src="images/Home2.jpeg"/>
+  <img class="homeimg  " id="imgmain" src="images/Home3.jpeg"/>
+  <img class="homeimg  " id="imgmain" src="images/Home4.jpeg"/>
+ 
+</div>
+<div class="w3-container texttop w3-hide-small">
+    <div class="w3-row ">
+    
+        <div class="w3-col s8 m8 l8 homefont"> HOME </div>
+        <div class="w3-col s4 m4 l4 movfont homeanim txtmain" >is the starting place of Love, Hope, and Dreams.</div>
+        <div class="w3-col s4 m4 l4 movfont homeanim txtmain" >is where love resides,memories are created, friends always belong, and laughter never ends.</div>
+        <div class="w3-col s4 m4 l4 movfont homeanim txtmain" >is not a place....it is a feeling.</div>
+        <div class="w3-col s4 m4 l4 movfont homeanim txtmain">Sweet Home.</div>
+    </div>
+ </div>
+ 
+ <div  class="w3-container invtext w3-animate-zoom">
+ <p>Please join us as we enter our new home with high hopes and dreams. <a href="http://twitter.com/neowebzen"> RSVP</a></p>
+ </div>
+ 
+ 
+ <script>
+
+var ct=0;
+getpictstexts();	
+function getpictstexts()
+{
+     var im =document.getElementsByClassName("homeimg");
+	 var txt = document.getElementsByClassName("txtmain"); 
+	 
+	
+	for(i=0; i < im.length; i++)
+		{
+		 	im[i].style.display="none";
+			txt[i].style.display="none";			
+		
+		}
+	
+	ct++;
+	if(ct > im.length) {ct =1;}
+	
+	im[ct-1].style.display="block";
+	txt[ct -1].style.display="block";
+	setTimeout(getpictstexts,5000);
+}
+
+
+</script>
+
+</body>
+</html>
+
+
