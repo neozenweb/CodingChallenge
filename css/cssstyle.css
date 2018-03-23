@@ -20,13 +20,13 @@
 @keyframes homeanim
 {
 0% {top:0px;left:0px;}
-100% {top:0px;left:200px;}
+100% {top:0px;left:400px;}
 }
 
 @-webkit-keyframes homeanim
 {
 0% {top:0px;left:0px;}
-100% {top:0px;left:200px;}
+100% {top:0px;left:400px;}
 }
 @keyframes imganim
 {
@@ -164,6 +164,7 @@
    top:50px;
    left:100px;
    font-family: 'Pacifico';
+   color:white;
 font-size:20px;
 font-weight:bold;
    
@@ -227,7 +228,7 @@ font-weight: bold;
 .movfont
 {
 font-family: 'Indie Flower';
-color:red;
+color:white;
 font-size:40px;
 font-weight: bold;
 
@@ -235,10 +236,10 @@ font-weight: bold;
 .homefont
 {
 font-family: 'Tangerine';
-color:red;
+color:white;
 font-size:60px;
 font-weight: bold;
-padding-left:200px;
+padding-left:100px;
 
 }
 .thfont
