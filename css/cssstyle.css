@@ -364,3 +364,45 @@ padding:10px;
 .txtmain
 {
 }
+.flex-container
+{
+display:flex;
+direction:row;
+flex-wrap:wrap;
+justify-content:space-around;
+align-items:center;
+background-color:#444fff;
+}
+.flex-container>div{
+  background-color: #332211;
+  color: white;
+  width:250px;
+  height:200px;
+  font-size: 30px;
+}
+.init{
+  background-color: #332211;
+  color: white;
+  width:250px;
+  height:200px;
+  font-size: 30px;
+}
+.fin{
+  background-color: #ffffff;
+  color: white;
+  width:100px;
+  height:200px;
+  font-size: 10px;
+  opacity: 0.5;
+  filter: alpha(opacity=50); 
+  
+}
+.btninfo{
+  background-color:yellow;
+  position:absolute;
+  color: Red;
+  width:100px;
+  height:50px;
+  font-size: 10px;
+  
+}
