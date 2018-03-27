@@ -23,26 +23,50 @@
 <div  class="flex-container">
      <div onMouseOver="javascript:overfunc(1);" onMouseOut="javascript:outfunc(1);" > 
      <img class="cardimg" name="imgsh" src="images/pixelart.jpg"/>
-      <button name="btninfo" class="btninfo" style="visibility:hidden"> More...</button>
-      </div>
+    <div class="w3-container w3-padding-12">  
+    <button name="btninfo" onClick="javascript:dispscr(1);"  class="btninfo">
+     More...</button></div>
+  </div>
      <div onMouseOver="javascript:overfunc(2);" onMouseOut="javascript:outfunc(2);">
       <img class="cardimg" name="imgsh" src="images/cssanimate.jpg"/>  
-       <button name="btninfo" class="btninfo" style="visibility:hidden"> More...</button>
-      </div>
+     <div class="w3-container w3-padding-12">  
+     <button name="btninfo" onClick="javascript:dispscr(2);"  class="btninfo">
+     More...</button></div>
+  </div>
      <div onMouseOver="javascript:overfunc(3);" onMouseOut="javascript:outfunc(3);">
      <img class="cardimg" name="imgsh" src="images/portfolio.jpg"/> 
-      <button name="btninfo" class="btninfo" style="visibility:hidden"> More...</button>
-     </div>
+    <div class="w3-container w3-padding-12"> 
+    <button name="btninfo" onClick="javascript:dispscr(3);"  class="btninfo">
+     More...</button></div>
+  </div>
      <div onMouseOver="javascript:overfunc(4);" onMouseOut="javascript:outfunc(4);"> 
      <img class="cardimg" name="imgsh" src="images/invitation.jpg"/> 
-      <button name="btninfo" class="btninfo" style="visibility:hidden"> More...</button>
-      </div>
+      <div class="w3-container w3-padding-12">
+      <button name="btninfo" onClick="javascript:dispscr(4);"  class="btninfo">
+      
+      More...</button></div>
+  </div>
      <div onMouseOver="javascript:overfunc(5);" onMouseOut="javascript:outfunc(5);">
+     
      <img class="cardimg" name="imgsh"  src="images/touristattractions.jpg"/>  
-      <button name="btninfo" class="btninfo" style="visibility:hidden"> More...</button>
-     </div>
+      <div class="w3-container w3-padding-12">
+     <button name="btninfo" onClick="javascript:dispscr(5);"  class="btninfo">
+      More...</button></div>
+  </div>
+  
+  
+  
 </div>
 
+
+ <div id="popup" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('popup').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+       
+      </div>
+    </div>
+  </div>
  <div class="w3-container w3-animate-zoom mainfont" style="color:red;font-weight:bolder"> WORK IN PROGRESS............</div>
 </body>
 </html>
