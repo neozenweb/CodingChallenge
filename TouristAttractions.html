@@ -11,9 +11,11 @@
 <link rel="stylesheet" href="css/bootstrap-social.css">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
-<script language="JavaScript" src="javascript/invitationjs.js"></script>
+<script language="JavaScript" src="javascript/jscode.js"></script>
 <script language="JavaScript" src="javascript/w3data.js"></script>
 <script language="JavaScript" src="javascript/jquery-3.1.1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlOlRZTuPqLX8ZOFCrZdDwQYcmxYUOLc4&libraries=geometry&callback=placeMarker" async defer>
+</script>
 
 
 
@@ -29,8 +31,10 @@
           
           <header class="mainfont"> Atlanta Botanical Gardens  </header>
           
-         <img class="cardimg w3-hover-opacity w3-hover-border-white" id="cardimg" src="images/attraction1.jpg"/>
-          <footer class"secfont "><p>Plant collection and display for education, research, and enjoyment. </p>
+        <img class="cardimg  w3-hover-opacity w3-hover-border-white" 
+        onMouseOver="javascript:dispmod(1); " id="cardimg" src="images/attraction1.jpg"/>
+        
+           <footer class"secfont "><p>Plant collection and display for education, research, and enjoyment. </p>
                    <p>1345 Piedmont Ave NE Fuqua Orchid Center, Atlanta, GA 30309</p>
            </footer>
       </div>    
@@ -41,8 +45,10 @@
           
           <header class="mainfont"> Stone Mountain Park  </header>
           
-         <img class="cardimg w3-hover-opacity w3-hover-border-white " id="cardimg" src="images/attraction2.jpg"/>
-          <footer class"secfont "><p>Atlanta's favorite theme park! From attractions to campgrounds to shows and more...  </p>
+       <img class="cardimg  w3-hover-opacity w3-hover-border-white" 
+        onMouseOver="javascript:dispmod(2); " id="cardimg" src="images/attraction2.jpg"/>
+        
+           <footer class"secfont "><p>Atlanta's favorite theme park! From attractions to campgrounds to shows and more...  </p>
                    <p>1000 Rober E. Lee Blvd, Atlanta, GA 30983</p>
            </footer>
       </div>    
@@ -53,8 +59,10 @@
           
           <header class="mainfont"> Georgia Aquarium </header>
           
-        <img class="cardimg  w3-hover-opacity w3-hover-border-white" id="cardimg" src="images/attraction3.jpg"/>
-          <footer class"secfont"><p>Public Aquarium housing several thousand species of aquatic animals, which reside in 10 million US gallons of marine and salt water.</p>
+       <img class="cardimg  w3-hover-opacity w3-hover-border-white" 
+        onMouseOver="javascript:dispmod(3); " id="cardimg" src="images/attraction3.jpg"/>
+        
+     <footer class"secfont"><p>Public Aquarium housing several thousand species of aquatic animals, which reside in 10 million US gallons of marine and salt water.</p>
                    <p>225 Baker St NW, Atlanta, GA 30313</p>
            </footer>
           </div>    
@@ -69,8 +77,9 @@
           
           <header class="mainfont">Skyview Atlanta </header>
           
-         <img class="cardimg w3-hover-opacity w3-hover-border-white " id="cardimg" src="images/attraction4.jpg"/>
-          <footer class"secfont"><p>20-story Ferris wheel in Centennial Park providing scenic views from climate-controlled gondolas. </p>
+       <img class="cardimg  w3-hover-opacity w3-hover-border-white" 
+        onMouseOver="javascript:dispmod(4); " id="cardimg" src="images/attraction4.jpg"/>
+           <footer class"secfont"><p>20-story Ferris wheel in Centennial Park providing scenic views from climate-controlled gondolas. </p>
                    <p>168 Luckie St NW, Atlanta, GA 30303</p>
            </footer>
       </div>    
@@ -81,8 +90,10 @@
           
           <header class="mainfont"> Coca Cola Museum  </header>
           
-         <img class="cardimg w3-hover-opacity w3-hover-border-white " id="cardimg" src="images/attraction5.jpg"/>
-          <footer class"secfont"><p>The World of Coca-Cola is a museum, located in Atlanta, Georgia, showcasing the history of The Coca-Cola Company.  </p>
+        <img class="cardimg  w3-hover-opacity w3-hover-border-white" 
+        onMouseOver="javascript:dispmod(5); " id="cardimg" src="images/attraction5.jpg"/>
+        
+           <footer class"secfont"><p>The World of Coca-Cola is a museum, located in Atlanta, Georgia, showcasing the history of The Coca-Cola Company.  </p>
                    <p>121 Baker St NW, Atlanta, GA 30313</p>
            </footer>
       </div>    
@@ -93,7 +104,11 @@
           
           <header class="mainfont">CNN Center </header>
           
-        <div class="w3-container"><img class="cardimg w3-hover-opacity w3-hover-border-white " id="cardimg" src="images/attraction6.jpg"/></div>
+        <div class="w3-container">
+        <img class="cardimg  w3-hover-opacity w3-hover-border-white" 
+        onMouseOver="javascript:dispmod(6); " id="cardimg" src="images/attraction6.jpg"/>
+        
+        </div>
           <footer class"secfont"><p>The main newsrooms and studios for several of CNN's news channels are located in the building.</p>
                    <p>190 Marietta St, Atlanta, GA 30303</p>
            </footer>
@@ -104,7 +119,29 @@
 </div>
 </div>
 
+
+<div name="map" id="map" style="width:500px;height:400px;" class"thfont"> Address </div>
  
+<!--<button onclick="document.getElementById('id01').style.display='block'"
+class="w3-button">Open Modal</button>-->
+
+<!-- The Modal -->
+<div id="modopen" name="modopen" class="w3-modal">
+  
+    <div class="w3-container ">
+      
+     <div class="w3-modal-content w3-gray"> 
+      <div name="modref" id="modref" class="thfont w3-half" style="width:50%;height:50%;" > Address </div>
+     <span onClick="document.getElementById('modopen').style.display='none'"
+       class="w3-button w3-white w3-Xlarge w3-display-topright w3-mobile">Close</span>
+    
+     
+     <img name="modimg"  id="modimg" class="modimg w3-half" /> 
+    
+    
+    </div>
+  </div>
+</div>
 </body>
 </html>
 
