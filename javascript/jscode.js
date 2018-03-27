@@ -5,14 +5,13 @@ function dispscr(ctr)
 {
 	var linkurls =["http://rawgit.com/neozenweb/CodingChallenge/master/PixelArt.html",
 				   "http://rawgit.com/neozenweb/CodingChallenge/master/CSSAnimate.html",
-				   "http://rawgit.com/neozenweb/CodingChallenge/master/Portfolio.html",
+				   "http://rawgit.com/neozenweb/CodingChallenge/master/MainPortfolio.html",
 				   "http://rawgit.com/neozenweb/CodingChallenge/master/Invitation.html",
 				   "http://rawgit.com/neozenweb/CodingChallenge/master/TouristAttractions.html"
 				   ];
 	var ct = parseInt(ctr) - 1;
-	var popup = document.getElementById('popup');
-	popup.style.display='block';
-	popup.location.href="";
+	
+	var newone = window.open(linkurls[ct],  "width=200, height=100");
 	
 }
 
