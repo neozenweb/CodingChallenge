@@ -1,5 +1,39 @@
 // JavaScript Document
 
+function dispmod(ctr)
+{
+		var lat=[33.7901,33.8081608,33.763382,33.699852,33.762742,33.758014];
+	var long =[-84.3740,-84.170196,-84.39511,-84.567843,-84.392664,-84.395071];
+	
+	var ct = parseInt(ctr);
+     var src = "images/attraction"+ct+".jpg";
+	var modimg = document.getElementById("modimg");
+	document.getElementById("modimg").setAttribute("src",src);
+	placeMarker(lat[ct - 1],long[ct - 1]);
+	document.getElementById("modopen").style.display='block';
+		
+}
+
+
+
+
+
+
+function placeMarker(lat,long) {
+	var latlng = new google.maps.LatLng(parseFloat(lat),parseFloat(long));
+  var mapOptions = {
+   // center: new google.maps.LatLng(parseFloat(lat),parseFloat(long)),
+   center:latlng,
+ 
+    zoom:19,
+	 mapTypeId: google.maps.MapTypeId.HYBRID
+      };
+  
+  
+  var map = new google.maps.Map(document.getElementById("modref"),mapOptions);
+  
+}
+
 
 function dispscr(ctr)
 {
