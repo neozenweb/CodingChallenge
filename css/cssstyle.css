@@ -371,38 +371,25 @@ direction:row;
 flex-wrap:wrap;
 justify-content:space-around;
 align-items:center;
-background-color:#444fff;
+background-color:#CEFF33;
 }
 .flex-container>div{
-  background-color: #332211;
+  background-color: #214503;
   color: white;
   width:250px;
   height:200px;
   font-size: 30px;
 }
-.init{
-  background-color: #332211;
-  color: white;
-  width:250px;
-  height:200px;
-  font-size: 30px;
-}
-.fin{
-  background-color: #ffffff;
-  color: white;
-  width:100px;
-  height:200px;
-  font-size: 10px;
-  opacity: 0.5;
-  filter: alpha(opacity=50); 
-  
-}
+
+
 .btninfo{
-  background-color:yellow;
-  position:absolute;
-  color: Red;
-  width:100px;
-  height:50px;
+  background-color:white;
+  padding-top:10px;
+    color: Red;
+	 width:50px;
+  height:30px;
   font-size: 10px;
-  
+  font-weight: bolder;
+   opacity: 0;
+  filter: alpha(opacity=0); 
 }
