@@ -188,6 +188,22 @@ font-weight:bold;
 
 
 }
+body
+{
+  background-image:url("../images/fireworks.png");
+  background-color:#ffffff;
+  background-repeat:no-repeat;
+}
+
+.quoteclass
+{
+font-family: 'Tangerine';
+font-size:30px;
+font-weight:bold;
+color:#3300CC;
+
+
+}
 
 .smfont
 {
@@ -206,7 +222,9 @@ padding-left:50px;
 {
    bottom:0px;
    position:fixed;
-   padding:50px;
+   padding:10px;
+   color:black;
+   font-weight:bold;
    
    }
 .menuitem
@@ -259,10 +277,22 @@ font-weight: bold;
 padding-top:20px;
 
 }
+
+.toppart
+{
+  
+   padding:50px;
+ }
 .mainimg
 {
  border:10px double black;
  
+ }
+ .logoimg
+{
+width:200px;
+height:250px;
+
  }
  .smimg
 {
@@ -377,10 +407,10 @@ direction:row;
 flex-wrap:wrap;
 justify-content:space-around;
 align-items:center;
-background-color:#CEFF33;
+background-color:#ffffff;
 }
 .flex-container>div{
-  background-color: #214503;
+  background-color: #ffffff;
   color: white;
   width:250px;
   height:200px;
