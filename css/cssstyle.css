@@ -404,14 +404,17 @@ padding:10px;
 {
 display:flex;
 direction:row;
-flex-wrap:wrap;
+flex-wrap:no-wrap;
+ display: -webkit-flex; /* Safari */
+ -webkit-flex-wrap: no-wrap; /* Safari 6.1+ */
 justify-content:space-around;
 align-items:center;
 background-color:#ffffff;
+
 }
 .flex-container>div{
   background-color: #ffffff;
-  color: white;
+    color: white;
   width:250px;
   height:200px;
   font-size: 30px;
