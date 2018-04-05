@@ -11,9 +11,10 @@ $(document).ready(function(){
 							$.getJSON("https://raw.githubusercontent.com/neozenweb/CodingChallenge/master/QuotesApi.API",function(result){
 									randomquote = JSON.stringify(result);
 								alert(randomquote);
-							    
+							          
 								   randnum = Math.floor(Math.random() * 10) +1;
 								    alert("Random number is " + randnum);
+								    alert(randomquote.parse(randnum));
 								
            								randomquote = randomquote.parse(randnum);
 									alert("Random quote is  " +randomquote.quote);
