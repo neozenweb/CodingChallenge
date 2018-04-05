@@ -16,8 +16,8 @@ $(document).ready(function(){
 								    alert("Random number is " + randnum);
 								for (randnum in randomquote) {
            								
-									alert("Random quote is  " +randomquote[randnum].quote);
-									ranqt =  randomquote[randnum].quote;
+									alert("Random quote is  " +randomquote[randnum]);
+									ranqt =  randomquote[randnum];
        										 }
 								     
 								  
