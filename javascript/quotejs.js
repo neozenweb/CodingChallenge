@@ -15,10 +15,11 @@ $(document).ready(function(){
 								    alert("Random number is " + randnum);
 								    
 								alert("Random quote is  " +randomquote[randnum]["quote"]);
-						ranqt = "<p>" + randomquote[randnum]["quote"] + "</p><p>   ..." +randomquote[randnum]["name"] +"</p>";
-       										 
+										 
 								     			   
-											$("#quotediv").html(ranqt);
+											$("#quotediv").text(randomquote[randnum]["quote"]);
+									$("#fampers").text(randomquote[randnum]["name"]);
+								  
 								  
 												        
 								      
