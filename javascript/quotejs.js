@@ -18,7 +18,7 @@ $(document).ready(function(){
 										 
 								     			   
 											$("#quotediv").text(randomquote[randnum]["quote"]);
-									$("#fampers").text(randomquote[randnum]["name"]);
+									$("#fampers").text(randomquote[randnum]["author"]);
 								  
 								  
 												        
