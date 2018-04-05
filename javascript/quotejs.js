@@ -14,7 +14,7 @@ $(document).ready(function(){
 								   randnum = Math.floor(Math.random() * 10) +1;
 								    alert("Random number is " + randnum);
 								
-								     alert("Random quote is  " +randomquote[randnum]);
+								     alert("Random quote is  " +randomquote.quote[randnum]);
 									ranqt =  randomquote[randnum];
 								  
 												        
