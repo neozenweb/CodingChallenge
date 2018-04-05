@@ -10,7 +10,7 @@ $(document).ready(function(){
 													
 							$.getJSON("https://raw.githubusercontent.com/neozenweb/CodingChallenge/master/QuotesApi.API",function(result){
 									
-							          randomquote = result;
+							          randomquote =JSON.parse(JSON.stringify(result));
 								   randnum = Math.floor(Math.random() * 10) +1;
 								    alert("Random number is " + randnum);
 								    
