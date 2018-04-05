@@ -11,7 +11,7 @@ $(document).ready(function(){
 								
 								var ranqt = result.filter(function(){
 									
-									return Math.floor(Math.random() * 10));
+									return Math.floor(Math.random() * 10);
 								});
 															
 								$("#quotediv").html(ranqt);
