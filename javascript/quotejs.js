@@ -25,7 +25,7 @@ function createCORSRequest(method, url) {
 
 function geturlperm()
 {
-	var xhr = createCORSRequest('GET', "http://github.com/neozenweb/CodingChallenge/blob/master/QuotesApi.API");
+	var xhr = createCORSRequest('GET', "https://github.com/neozenweb/CodingChallenge/blob/master/QuotesApi.API");
 	if (!xhr) {
 	  throw new Error('CORS not supported');
 	}
@@ -39,7 +39,7 @@ $(document).ready(function(){
 						   
 					$("button").click(function(){
 													   alert("Button clicked");
-							$.getJSON("http://github.com/neozenweb/CodingChallenge/blob/master/QuotesApi.API",function(result){
+							$.getJSON("https://github.com/neozenweb/CodingChallenge/blob/master/QuotesApi.API",function(result){
 																			  
 															
 														$("#quotediv").html(result.filter(Math.floor(Math.random() * 10)));
