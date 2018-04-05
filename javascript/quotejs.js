@@ -14,11 +14,11 @@ $(document).ready(function(){
 							    
 								   randnum = Math.floor(Math.random() * 10) +1;
 								    alert("Random number is " + randnum);
-								for (randnum in randomquote) {
-           								
-									alert("Random quote is  " +randomquote[randnum]);
-									ranqt =  randomquote[randnum];
-       										 }
+								
+           								randomquote = randomquote.parse(randnum);
+									alert("Random quote is  " +randomquote.quote);
+									ranqt =  randomquote.quote;
+       										 
 								     
 								  
 												        
