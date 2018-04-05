@@ -9,14 +9,13 @@ $(document).ready(function(){
 					$("button").click(function(){
 													
 							$.getJSON("https://raw.githubusercontent.com/neozenweb/CodingChallenge/master/QuotesApi.API",function(result){
-									randomquote = JSON.stringify(result);
-								alert(randomquote);
+									
 							          
 								   randnum = Math.floor(Math.random() * 10) +1;
 								    alert("Random number is " + randnum);
 								    
-								alert("Random quote is  " +randomquote[randnum].quote);
-									ranqt =  randomquote[randnum].quote;
+								alert("Random quote is  " +randomquote[randnum]["quote"]);
+									ranqt = randomquote[randnum]["quote"];
        										 
 								     
 								  
