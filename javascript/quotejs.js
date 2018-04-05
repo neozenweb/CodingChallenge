@@ -14,15 +14,15 @@ $(document).ready(function(){
 								      
 								});
 									
-								var ranqt = randomquote.filter(function(){
-									      randnum = Math.floor(Math.random() * 10) +1;
-									       alert("Random number is " + randnum);
+								 
+								   randnum = Math.floor(Math.random() * 10) +1;
+								    alert("Random number is " + randnum);
 								
-									       alert("Random quote is  " +randomquote[randnum]);
-									      return randomquote[randnum];
+								     alert("Random quote is  " +randomquote[randnum]);
+									ranqt =  randomquote[randnum];
 								  
 																			  
-													  });  
+													
 													   
 											$("#quotediv").html(ranqt);
 																		  
