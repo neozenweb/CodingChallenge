@@ -18,7 +18,7 @@ $(document).ready(function(){
 						ranqt = "<p>" + randomquote[randnum]["quote"] + "</p><p>   ..." +randomquote[randnum]["name"] +"</p>";
        										 
 								     			   
-											$("#quotediv").innerHTML(ranqt);
+											$("#quotediv").append(ranqt);
 								  
 												        
 								      
