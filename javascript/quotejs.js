@@ -14,9 +14,12 @@ $(document).ready(function(){
 							    
 								   randnum = Math.floor(Math.random() * 10) +1;
 								    alert("Random number is " + randnum);
-								
-								     alert("Random quote is  " +randomquote[randnum].quote);
+								for (randnum in randomquote) {
+           								
+									alert("Random quote is  " +randomquote[randnum].quote);
 									ranqt =  randomquote[randnum].quote;
+       										 }
+								     
 								  
 												        
 								      
