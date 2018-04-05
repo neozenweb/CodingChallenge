@@ -10,10 +10,10 @@ $(document).ready(function(){
 							$.getJSON("https://raw.githubusercontent.com/neozenweb/CodingChallenge/master/QuotesApi.API",function(result){
 																			  
 															
-														$("#quotediv").html(result.filter(Math.floor(Math.random() * 10)));
+								$("#quotediv").html(result.filter(Math.floor(Math.random() * 10)));
 																			  
 																			  
-																			  });  
+																		  });  
 													   
 													   
 													   });
