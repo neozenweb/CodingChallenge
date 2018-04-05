@@ -15,9 +15,10 @@ $(document).ready(function(){
 								    alert("Random number is " + randnum);
 								    
 								alert("Random quote is  " +randomquote[randnum]["quote"]);
-									ranqt = randomquote[randnum]["quote"];
+						ranqt = "<p>" + randomquote[randnum]["quote"] + "</p><p>   ..." +randomquote[randnum]["name"] +"</p>";
        										 
-								     
+								     			   
+											$("#quotediv").innerHTML(ranqt);
 								  
 												        
 								      
@@ -25,8 +26,7 @@ $(document).ready(function(){
 									
 																  
 													
-													   
-											$("#quotediv").innerHTML(ranqt);
+										
 																		  
 								   
 													   });
