@@ -14,7 +14,8 @@ $(document).ready(function(){
 									return Math.floor(Math.random() * 10);
 								});
 									
-								   alert(ranqt);
+								var randomquote = JSON.stringify(ranqt);
+								   alert(randomquote);
 								$("#quotediv").html(ranqt);
 																			  
 																			  
