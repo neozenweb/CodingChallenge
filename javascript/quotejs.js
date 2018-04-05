@@ -4,7 +4,7 @@
 $(document).ready(function(){
 						   
 						var randomquote; 
-	                                         var randnum;
+	                                         var randnum, ranqt;
 						   
 					$("button").click(function(){
 													
@@ -26,7 +26,7 @@ $(document).ready(function(){
 																  
 													
 													   
-											$("#quotediv").html(ranqt);
+											$("#quotediv").innerHTML(ranqt);
 																		  
 								   
 													   });
