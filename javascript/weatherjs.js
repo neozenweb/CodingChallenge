@@ -5,7 +5,7 @@ $(document).ready(function(){
 			
     if (navigator.geolocation) {
                  navigator.geolocation.getCurrentPosition(showPosition,showError);
-		         alert("geolocation");
+		       
 		
     } else {
 		
@@ -34,7 +34,7 @@ function showPosition(position)
 								
 							      
 									wimg = result.weather[0].icon;
-									alert(result.weather[0].main.toLowerCase());
+								
 									switch(result.weather[0].main.toLowerCase())
 									{
 										case 'clouds':
@@ -57,7 +57,7 @@ function showPosition(position)
 										
 										
 									}
-									alert(bgimg);
+								
 									
 									frow.append(result.name + "   " + result.sys.country);
 								smallimg.setAttribute("src",wimg);
