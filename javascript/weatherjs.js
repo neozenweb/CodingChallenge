@@ -62,7 +62,7 @@ function showPosition(position)
 									}
 								
 									
-									frow.append(result.name + "   " + result.sys.country);
+								document.getElementById("fstrow").innerHTML	= result.name + "   " + result.sys.country;
 								smallimg.setAttribute("src",wimg);
 			document.getElementById("secrow").innerHTML = result.main.temp + "&#8457; Wind Speed " + result.wind.speed;
 				document.body.style.backgroundImage ="url('" + bgimg +"') norepeat";		  								     
