@@ -37,10 +37,13 @@ function showPosition(position)
 								
 									switch(result.weather[0].main.toLowerCase())
 									{
+										case 'rain':
+										case 'rainy':
 										case 'clouds':
 										    bgimg = "images/rainyweather.jpg"
 										    break;
 										case 'clear':
+										case 'sunny':
 										    bgimg = "images/sunnyweather.jpg"
 											break;
 										case 'cold':
@@ -62,8 +65,8 @@ function showPosition(position)
 									frow.append(result.name + "   " + result.sys.country);
 								smallimg.setAttribute("src",wimg);
 			document.getElementById("secrow").innerHTML = result.main.temp + "&#8457; Wind Speed " + result.wind.speed;
-				document.body.style.backgroundImage ="url('" + bgimg +"')";		  								     
-				document.body.style.backgroundRepeat =false;		  								     
+				document.body.style.backgroundImage ="url('" + bgimg +"') norepeat";		  								     
+				document.body.style.backgroundRepeat = "no-repeat";
 							   
 													   });
 	
