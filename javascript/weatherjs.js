@@ -65,7 +65,7 @@ function showPosition(position)
 								document.getElementById("fstrow").innerHTML	= result.name + "   " + result.sys.country;
 								smallimg.setAttribute("src",wimg);
 			document.getElementById("secrow").innerHTML = result.main.temp + "&#8457; Wind Speed " + result.wind.speed;
-				document.body.style.backgroundImage ="url('" + bgimg +"') norepeat";		  								     
+				document.body.style.backgroundImage ="url('" + bgimg +"')";		  								     
 				document.body.style.backgroundRepeat = "no-repeat";
 							   
 													   });
