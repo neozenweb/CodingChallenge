@@ -16,6 +16,18 @@ $(document).ready(function(){
 						   
 						   });
 
+var invocation = new XMLHttpRequest();
+var url = "https://fcc-weather-api.glitch.me/api/current?lat=" +lati + "&lon=" +longi;
+   
+function callOtherDomain() {
+  if(invocation) {    
+    invocation.open('GET', url, true);
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+}
+
+
 
 function showPosition(position)
 {
@@ -30,7 +42,8 @@ function showPosition(position)
 	lati = position.coords.latitude;
 	longi = position.coords.longitude;
     			$.get("https://fcc-weather-api.glitch.me/api/current?lat=" +lati + "&lon=" +longi,function(result){
-								
+					//$.get("https://darksky.net/forecast/" +lati + "," +longi,function(result){
+									
 								
 							      
 									wimg = result.weather[0].icon;
