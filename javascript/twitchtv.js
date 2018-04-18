@@ -3,7 +3,7 @@
 function loadChannels()
 {
 	
-	   var geturl = "https://id.twitch.tv/oauth2/authorize?client_id=5g1xxkzgahkcwqk5x0w7fhg7v2klao&redirect_uri=https://github.com/neozenweb/CodingChallenge/blob/master/twitchtv.js&response_type=token+id_token&scope=openid";
+	   var geturl = "https://id.twitch.tv/oauth2/authorize?client_id=5g1xxkzgahkcwqk5x0w7fhg7v2klao&redirect_uri=https://rawgit.com/neozenweb/CodingChallenge/master/twitchtv.html&response_type=token+id_token&scope=channel_feed_read+openid";
 	   var divcont = document.getElementById("maincont");
 	   var childnode,divnode,txtnode;
 			$.get(geturl,function(result){
