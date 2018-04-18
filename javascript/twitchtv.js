@@ -5,8 +5,7 @@ function loadChannels()
 	
 	  // var geturl = "https://id.twitch.tv/oauth2/authorize?client_id=5g1xxkzgahkcwqk5x0w7fhg7v2klao&redirect_uri=https://rawgit.com/neozenweb/CodingChallenge/master/twitchtv.html&response_type=token+id_token&scope=viewing_activity_read";
 	  
-	  var geturl = " https://id.twitch.tv/oauth2/authorize?client_id5g1xxkzgahkcwqk5x0w7fhg7v2klao&redirect_uri=https://rawgit.com/neozenweb/CodingChallenge/master/twitchtv.html&response_type=code
-    &scope=viewing_activity_read";
+	  var geturl = "https://id.twitch.tv/oauth2/authorize?client_id5g1xxkzgahkcwqk5x0w7fhg7v2klao&redirect_uri=https://rawgit.com/neozenweb/CodingChallenge/master/twitchtv.html&response_type=code&scope=viewing_activity_read";
 	
 	
 	   var divcont = document.getElementById("maincont");
