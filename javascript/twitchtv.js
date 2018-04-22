@@ -32,7 +32,7 @@ var gettoken = "https://id.twitch.tv/oauth2/token?client_id=5g1xxkzgahkcwqk5x0w7
         },
         function(data,status){
 			token = data[0];
-            alert("Data: " + token+ "\nStatus: " + status);
+            //alert("Data: " + token+ "\nStatus: " + status);
 			
         },"json");**/
 	   
@@ -69,7 +69,7 @@ var gettoken = "https://id.twitch.tv/oauth2/token?client_id=5g1xxkzgahkcwqk5x0w7
 	'async': 'false',
     'success' : function(result){
 		
-		                   alert("RESULT IS  " +JSON.stringify(result["data"]));
+		                //   alert("RESULT IS  " +JSON.stringify(result["data"]));
 						   
 									for(ctr=0;ctr<result["data"].length;ctr++)
 									{
@@ -125,7 +125,7 @@ var paranode = document.getElementsByName("udataline");
 var recon=0;
 var recoff=0;
 var msgnode;
-alert(txt);
+//alert(txt);
 for(var i=0;i<paranode.length;i++)
 {
 	 paranode[i].setAttribute("style","display:block;");
@@ -187,7 +187,7 @@ function displayData(udata)
 	  if(udata.length == userids.length)
 	  {
 		 
-			alert(JSON.stringify(udata));
+			//alert(JSON.stringify(udata));
 	
 		   var strhtml;
 		      
