@@ -4,9 +4,9 @@ function opensite(imgnm){
 	
 	imgnm = imgnm.substring(imgnm.indexOf("images/")+7,imgnm.length -4);
 	
-	var linkurls =["http://rawgit.com/neozenweb/CodingChallenge/master/PixelArt.html",
-				   "http://rawgit.com/neozenweb/CodingChallenge/master/CSSAnimate.html",
-				   "http://rawgit.com/neozenweb/CodingChallenge/master/MainPortfolio.html",
+	var linkurls =["http://moviestylehomeshopping.com/",
+				   "http://www.forsythyouthorchestra.com/",
+				   "http://rawgit.com/neozenweb/CodingChallenge/master/PixelArt.html",
 				   "http://rawgit.com/neozenweb/CodingChallenge/master/Invitation.html",
 				   "http://rawgit.com/neozenweb/CodingChallenge/master/TouristAttractions.html"
 				   ];
